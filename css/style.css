@@ -1,0 +1,151 @@
+:root {
+  --purp: #642abb;
+  --pnk: #f63fcf;
+  --yel: #f9bb50;
+  --drk: #1c2661;
+  --gry: #efe5ff;
+  --txt: #3a3b41;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.container {
+  padding: 0px;
+}
+
+.ppdb {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+.ppdb:hover {
+  background-color: #642abb;
+  color: white;
+  border-color: var(--purp);
+  transition: all 0.2s ease-in-out;
+}
+
+a.nav-link.active {
+  font-weight: 700;
+  color: #642abb;
+}
+
+a.nav-link:hover {
+  color: #642abb;
+  /*  */
+}
+
+.slogan {
+  font-size: 56px;
+}
+
+.main-button {
+  background-color: #f63fcf;
+}
+
+.main-button:hover {
+  background-color: #e725bd;
+  transition: all 0.2s ease-in-out;
+}
+
+#tentang img {
+  transition: all 0.2s ease-in-out;
+}
+
+#tentang img:hover {
+  scale: 1.05;
+}
+
+#footer h4 {
+  color: var(--purp);
+}
+
+#footer a {
+  color: var(--txt);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#footer li {
+  margin-bottom: 10px;
+}
+
+#footer a:hover {
+  color: var(--purp);
+  fill: var(--purp);
+}
+
+#footer svg {
+  fill: var(--txt);
+}
+
+#footer svg:hover {
+  fill: var(--purp);
+}
+
+#artikel .title {
+  color: #1c2661;
+}
+
+#artikel .title:hover {
+  color: #364281;
+}
+
+#galeri #more {
+  color: #642abb;
+}
+
+#galeri #more:hover {
+  color: #e725bd;
+}
+
+#guru #more {
+  color: #642abb;
+}
+
+#guru #more:hover {
+  color: #e725bd;
+}
+
+#card {
+  transition: all 0.2s ease-in-out;
+}
+
+#card:hover {
+  scale: 1.05;
+}
+
+#artikel svg {
+  transition: all 0.1s ease-in-out;
+}
+
+#artikel svg:hover {
+  scale: 1.2;
+}
+
+#keunggulan h4 {
+  font-size: 24px;
+  color: #1c2661;
+  font-weight: 600;
+}
+
+#keunggulan p {
+  font-size: 20px;
+  color: var(--txt);
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
