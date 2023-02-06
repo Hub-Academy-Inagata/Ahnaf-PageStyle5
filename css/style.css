@@ -5,6 +5,7 @@
   --drk: #1c2661;
   --gry: #efe5ff;
   --txt: #3a3b41;
+  --slt: #f8f4ff;
 }
 
 body {
@@ -22,22 +23,43 @@ h1 {
   padding: 0px;
 }
 
-.ppdb {
+.navbar {
+  z-index: 3;
+}
+
+* {
+  z-index: 2;
+}
+
+.nav-button {
   background-color: transparent;
   border-color: black;
   color: black;
+  border-radius: 100px;
 }
 
-.ppdb:hover {
+.nav-button:hover {
   background-color: #642abb;
   color: white;
   border-color: var(--purp);
   transition: all 0.2s ease-in-out;
 }
 
-a.nav-link.active {
+/* Navbar color */
+.nav-color {
+  background-color: white;
+  /* @apply z-[9999] bg-white;
+  backdrop-filter: blur(80px); */
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+.bg-transparent {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link.active {
   font-weight: 700;
-  color: #642abb;
 }
 
 a.nav-link:hover {
@@ -47,6 +69,56 @@ a.nav-link:hover {
 
 .slogan {
   font-size: 56px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero h5 {
+  font-size: 24px;
+}
+
+#artikel h3 {
+  font-size: 24px;
+}
+
+#contact img {
+  margin-bottom: 62px;
+}
+
+#artikel .cardicle .title {
+  font-size: 20px;
+}
+
+#detail-artikel h1 {
+  font-size: 40px;
+}
+
+#detail-artikel .isi {
+  font-size: 20px;
+}
+
+#detail-artikel .tanggal {
+  width: 220px;
+}
+
+.mail input {
+  font-size: 20px;
+  padding: 1rem;
+  border-color: gray;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border-style: solid;
+}
+
+.mail textarea {
+  font-size: 20px;
+  padding: 1rem;
+  border-color: gray;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border-style: solid;
 }
 
 .main-button {
@@ -64,6 +136,15 @@ a.nav-link:hover {
 
 #tentang img:hover {
   scale: 1.05;
+}
+
+#tentang p {
+  font-size: 24px;
+  width: 85%;
+}
+
+#galeri #more {
+  font-size: 24px;
 }
 
 #footer h4 {
@@ -95,6 +176,7 @@ a.nav-link:hover {
 
 #artikel .title {
   color: #1c2661;
+  font-size: 20px;
 }
 
 #artikel .title:hover {
@@ -109,8 +191,40 @@ a.nav-link:hover {
   color: #e725bd;
 }
 
+#galeri p {
+  font-size: 24px;
+}
+
+#galeri .gal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+#video img {
+  width: 1150px;
+}
+
+#video p {
+  font-size: 24px;
+}
+
+#doc .title {
+  font-size: 24px;
+}
+
+#news .judul {
+  font-size: 26px;
+}
+
 #guru #more {
+  font-size: 24px;
   color: #642abb;
+}
+
+#footer .cc {
+  font-size: 20px;
 }
 
 #guru #more:hover {
@@ -142,10 +256,4 @@ a.nav-link:hover {
 #keunggulan p {
   font-size: 20px;
   color: var(--txt);
-}
-
-.navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-80;
-  backdrop-filter: blur(5px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
