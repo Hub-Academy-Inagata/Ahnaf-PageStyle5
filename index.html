@@ -1,302 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beranda</title>
 
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <!-- my style -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- web icon -->
-    <link rel="icon" href="assets/img/logo.png" type="img/x-icon" />
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body class="" style="background-image: url(assets/img/bg-hero.png)">
-    <nav class="navbar navbar-expand-lg position-fixed w-100" style="background-color: var(--slt)">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"> <img src="assets/img/logo.png" alt="" style="width: 80px" /></a>
-        <button onclick="navtog()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" style="color: #642abb" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="includes/tentang.html">Tentang</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="includes/galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="includes/artikel.html">Artikel</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="includes/kontak.html">Kontak</a>
-            </li>
-          </ul>
-          <button class="nav-button py-1 px-4">PPDB</button>
+  <!-- web icon -->
+  <link rel="icon" href="assets/img/logo.png" type="img/x-icon" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="" style="background-image: url(assets/img/bg-hero.png)">
+  <nav class="navbar navbar-expand-lg position-fixed w-100 py-3" style="background-color: var(--slt)">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" style="width: 80px" /></a>
+      <button onclick="navtog()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" style="color: #642abb" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="includes/tentang.html">Tentang</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="includes/galeri.html">Galeri</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="includes/artikel.html">Artikel</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="includes/kontak.html">Kontak</a>
+          </li>
+        </ul>
+        <button class="nav-button py-1 px-4">PPDB</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero start -->
+  <section class="hero mb-5 overflow-hidden" style="padding-top: 80px; padding-bottom: 80px">
+    <div class="container w-100 mt-5">
+      <div class="row g-3 w-100 justify-content-between align-items-center hero-hero pb-5 h-100">
+        <div data-aos="fade-right" data-aos-duration="1000" class="col-12 col-md-6">
+          <h3 class="slogan fw-bold mb-3 lh-base">Tuntut Ilmu Untuk Masa Depan Yang Lebih Baik</h3>
+          <p class="fw-normal" style="margin-bottom: 28px">Jelajahi semua pengetahuan dan ilmu yang berguna bersama
+            kami, untuk kehidupan yang lebih bermanfaat</p>
+          <button type="button" onclick="location.href='includes/kontak.html'"
+            class="main-button text-decoration-none rounded-5 fw-semibold px-4 py-3 text-base text-white border-0">
+            Daftar Sekarang
+          </button>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="col-12 col-md-6">
+          <div class="w-100 d-flex justify-content-end">
+            <img src="assets/img/hero_illust.png" class="img-fluid img-hero ms-4" />
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- hero start -->
-    <section class="hero mb-5" style="padding-top: 80px; padding-bottom: 80px">
-      <div class="container h-100 mt-5">
-        <div class="row hero-hero pb-5 h-100">
-          <div data-aos="fade-right" data-aos-duration="1000" class="col-md-6 my-auto">
-            <h1 class="slogan mt-4 fw-bold mb-1 lh-base">Tuntut Ilmu Untuk Masa Depan Yang Lebih Baik</h1>
-            <p class="fw-normal" style="margin-bottom: 40px">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
-
-            <a href="includes/kontak.html" class="main-button text-decoration-none rounded-5 fw-semibold px-4 py-2 text-base text-white" role="button">Daftar Sekarang</a>
+      <div id="unggul" data-aos="fade-up" data-aos-duration="1000" class="row pt-5 mx-auto">
+        <div class="d-block bg-white shadow-lg py-lg-5 px-4 pb-md-3 pb-5 pt-5 px-md-3"
+          style="border-radius: 24px; color: var(--drk)">
+          <div>
+            <h2 class="fw-bold text-center mb-5">Keunggulan Sekolah Kami</h2>
           </div>
-          <div data-aos="fade-left" data-aos-duration="1000" class="col-md-6">
-            <img src="assets/img/hero_illust.png" class="img-fluid img-hero" />
-          </div>
-        </div>
-        <div id="unggul" data-aos="fade-up" data-aos-duration="1000" class="row pt-5 mx-auto">
-          <div class="d-block bg-white shadow-lg py-lg-5 pt-md-5 px-4 py-5 px-md-3" style="border-radius: 24px; color: var(--drk)">
-            <div>
-              <h2 class="fw-bold text-center mb-5">Keunggulan Sekolah Kami</h2>
+          <div class="row mx-auto fw-semibold text-center">
+            <div class="col-md-4">
+              <img src="assets/img/book.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
+              <h5>Menggunakan kurikulum Terbaru</h5>
             </div>
-            <div class="row mx-auto fw-semibold text-center">
-              <div class="col-md-4">
-                <img src="assets/img/book.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
-                <h5>Menggunakan kurikulum Terbaru</h5>
-              </div>
-              <div class="col-md-4">
-                <img src="assets/img/time.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
-                <h5>Waktu belajar yang efektif selama di sekolah</h5>
-              </div>
-              <div class="col-md-4">
-                <img src="assets/img/pen.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
-                <h5 class="mb-0">Penyaluran Bakat dan Minat Siswa</h5>
-              </div>
+            <div class="col-md-4">
+              <img src="assets/img/time.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
+              <h5>Waktu belajar yang efektif selama di sekolah</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/pen.png" alt="" class="img-fluid mb-4" style="width: 72xp" />
+              <h5 class="mb-0">Penyaluran Bakat dan Minat Siswa</h5>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- hero end -->
+    </div>
+  </section>
+  <!-- hero end -->
 
-    <!-- tentang start -->
-    <section id="tentang" class="pt-5" style="padding-bottom: 80px">
-      <div class="container">
-        <div class="row">
-          <div data-aos="fade-right" data-aos-duration="1000" class="col-md-6">
-            <h1 class="fw-bold mb-4">Tentang Kami</h1>
-            <p class="lh-base mb-4" style="text-align: justify">
-              Sekolah Kami merupakan sekolah informal yang dikelola untuk membantu anak mengembangkan bakat dan kemampuannya. Dengan memberikan kurikulum terbaik agar anak bisa memilih minat nya dan fokus mengembangkan minat tersebut.
-              Sekolah ini didirikan sejak tahun 1989 dan terus berkembang hingga saat ini.
-            </p>
-          </div>
-          <div data-aos="fade-left" data-aos-duration="1000" class="col-md-6">
-            <img src="assets/img/vid.png" alt="" class="img-fluid" />
+  <!-- tentang start -->
+  <section id="tentang" class="pt-5" style="padding-bottom: 80px">
+    <div class="container overflow-hidden py-4">
+      <div class="row w-100 d-flex justify-content-between align-items-center">
+        <div data-aos="fade-right" data-aos-duration="1000" class="col-12 col-md-6">
+          <h1 class="fw-bold mb-4">Tentang Kami</h1>
+          <p class="lh-base mb-4" style="text-align: justify">
+            Sekolah Kami merupakan sekolah informal yang dikelola untuk membantu anak mengembangkan bakat dan
+            kemampuannya. Dengan memberikan kurikulum terbaik agar anak bisa memilih minat nya dan fokus mengembangkan
+            minat tersebut.
+            Sekolah ini didirikan sejak tahun 1989 dan terus berkembang hingga saat ini.
+          </p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="col-12 col-md-6 d-flex justify-content-end">
+          <!-- <img src="assets/img/vid.png" alt="" class="img-fluid" /> -->
+          <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/hLK41oLH8kw?si=uqPwwBGYmI4SeM8a" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
-    </section>
-    <!-- tentang end -->
+    </div>
+  </section>
+  <!-- tentang end -->
 
-    <!-- artikel start -->
-    <section id="artikel" class="pt-5 pb-5">
-      <div class="container">
+  <!-- artikel start -->
+  <section id="artikel" class="pt-5 pb-5">
+    <div class="container">
+      <div class="">
+        <div class="text-center mb-5" style="color: var(--drk)">
+          <h1 class="fw-bold mb-2">Artikel</h1>
+          <h3 class="">Artikel terbaru seputar pendidikan</h3>
+        </div>
+      </div>
+      <div class="row art gap-lg-3 g-3 d-flex">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
+          <img src="assets/img/artikel.png" class="img-fluid" />
+          <div class="my-3 py-2 px-1 rounded-3"
+            style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
+            <p class="my-auto" style="text-align: center">12 Desember 2021</p>
+          </div>
+          <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong
+            Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
+          <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin
+            kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
+          <img src="assets/img/artikel.png" class="img-fluid" />
+          <div class="my-3 py-2 px-1 rounded-3"
+            style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
+            <p class="my-auto" style="text-align: center">12 Desember 2021</p>
+          </div>
+          <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong
+            Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
+          <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin
+            kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
+          <img src="assets/img/artikel.png" class="img-fluid" />
+          <div class="my-3 py-2 px-1 rounded-3"
+            style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
+            <p class="my-auto" style="text-align: center">12 Desember 2021</p>
+          </div>
+          <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong
+            Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
+          <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin
+            kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- artikel end-->
+
+  <!-- galeri start -->
+  <section id="galeri" class="py-5">
+    <div class="container">
+      <div class="d-flex w-100 align-items-center justify-content-between mb-4">
         <div class="">
-          <div class="text-center mb-5" style="color: var(--drk)">
-            <h1 class="fw-bold mb-2">Artikel</h1>
-            <h3 class="">Artikel terbaru seputar pendidikan</h3>
-          </div>
+          <h1 class="fw-bold mb-0" style="color: var(--drk)">Galeri Sekolah</h1>
         </div>
-        <div class="row art gap-lg-3 gap-3 d-flex">
-          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
-            <img src="assets/img/artikel.png" class="img-fluid" />
-            <div class="my-3 py-2 px-1 rounded-3" style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
-              <p class="my-auto" style="text-align: center">12 Desember 2021</p>
-            </div>
-            <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
-            <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
-            <img src="assets/img/artikel.png" class="img-fluid" />
-            <div class="my-3 py-2 px-1 rounded-3" style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
-              <p class="my-auto" style="text-align: center">12 Desember 2021</p>
-            </div>
-            <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
-            <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="col card-article">
-            <img src="assets/img/artikel.png" class="img-fluid" />
-            <div class="my-3 py-2 px-1 rounded-3" style="background-color: var(--gry); color: var(--purp); font-size: 14px; max-width: 160px">
-              <p class="my-auto" style="text-align: center">12 Desember 2021</p>
-            </div>
-            <a href="includes/detail_artikel.html" class="title d-block text-decoration-none fw-bold lh-base">Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke Sekolah</a>
-            <p class="mt-3" style="text-align: justify">Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman . . .</p>
-          </div>
+        <div class=" text-end">
+          <a href="includes/galeri.html" id="more" class="inline-block text-decoration-none">Lihat Semua
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-chevron-right fw-bold"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- artikel end-->
-
-    <!-- galeri start -->
-    <section id="galeri" class="py-5">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col">
-            <h1 class="fw-bold" style="color: var(--drk)">Galeri Sekolah</h1>
-          </div>
-          <div class="col text-end">
-            <a href="includes/galeri.html" id="more" class="inline-block text-decoration-none"
-              >Lihat Semua
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-chevron-right fw-bold" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+      <div class="">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="row gal gap-4 gap-lg-4 gap-md-3">
+          <div class="gallery-card col px-0 rounded-3 overflow-hidden"
+            style="background-color: var(--purp); color: white">
+            <a href="" class=""></a>
+            <img src="assets/img/galeri1.png" class="card-img-top" alt="..." />
+            <div class="w-100 d-flex align-items-center justify-content-between p-3">
+              <p class="card-text mb-0">Belajar Mengajar</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
               </svg>
+            </div>
+            </a>
+          </div>
+          <div class="gallery-card col px-0 rounded-3 overflow-hidden"
+            style="font-size: 24px; background-color: var(--yel); color: white">
+            <a href="" class="">
+              <img src="assets/img/galeri2.png" class="card-img-top" alt="..." />
+              <div class="w-100 d-flex align-items-center justify-content-between p-3">
+                <p class="card-text mb-0">Sharing Session</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-card col px-0 rounded-3 overflow-hidden"
+            style="font-size: 24px; background-color: var(--pnk); color: white">
+            <img src="assets/img/galeri3.png" class="card-img-top" alt="..." />
+            <div class="w-100 d-flex align-items-center justify-content-between p-3">
+              <p class="card-text mb-0">Kelulusan</p>
+              <a href="" class=""><svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+            </div>
             </a>
           </div>
         </div>
-        <div class="">
-          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="row gal gap-4 gap-lg-4 gap-md-3">
-            <div id="card" class="col px-0 rounded-3 overflow-hidden" style="background-color: var(--purp); color: white">
-              <img src="assets/img/galeri1.png" class="card-img-top" alt="..." />
-              <div class="row">
-                <div class="col d-inline-flex justify-content-between px-4 pt-3 pb-1">
-                  <p class="card-text ps-1">Belajar Mengajar</p>
-                  <a href="" class=""
-                    ><svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+      </div>
+    </div>
+  </section>
+  <!-- galeri end -->
+
+  <!-- footer start -->
+  <section id="footer" class="pt-5 mt-5" style="background-color: var(--gry)">
+    <div class="container">
+      <div class="row justify-center pb-5">
+        <div class="col-md-5 me-5">
+          <div class="">
+            <div class="mb-4">
+              <img src="assets/img/logo2.png" alt="" />
             </div>
-            <div id="card" class="col px-0 rounded-3 overflow-hidden" style="font-size: 24px; background-color: var(--yel); color: white">
-              <img src="assets/img/galeri2.png" class="card-img-top" alt="..." />
-              <div class="row">
-                <div class="col d-inline-flex justify-content-between px-4 pt-3 pb-1">
-                  <p class="card-text ps-1">Sharing Session</p>
-                  <a href="" class=""
-                    ><svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id="card" class="col px-0 rounded-3 overflow-hidden" style="font-size: 24px; background-color: var(--pnk); color: white">
-              <img src="assets/img/galeri3.png" class="card-img-top" alt="..." />
-              <div class="row">
-                <div class="col d-inline-flex justify-content-between px-4 pt-3 pb-1">
-                  <p class="card-text ps-1">Kelulusan</p>
-                  <a href="" class=""
-                    ><svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <p class="cc" style="color: var(--drk)">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk
+              kehidupan yang lebih bermanfaat</p>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- galeri end -->
-
-    <!-- footer start -->
-    <section id="footer" class="pt-5 mt-5" style="background-color: var(--gry)">
-      <div class="container">
-        <div class="row justify-center pb-5">
-          <div class="col-md-5 me-5">
-            <div class="">
-              <div class="mb-4">
-                <img src="assets/img/logo2.png" alt="" />
-              </div>
-              <p class="cc" style="color: var(--drk)">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
-            </div>
-          </div>
-          <div class="col me-3">
-            <h4 class="fw-semibold mb-4 pt-3">Informasi</h4>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="includes/artikel.html" class="inline-block mb-5">Artikel</a>
-              </li>
-              <li class="mb-3">
-                <a href="includes/galeri.html" class="inline-block mb-5">Galeri</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col me-3">
-            <h4 class="fw-semibold mb-4 pt-3">Tentang</h4>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="includes/tentang.html" class="inline-block mb-5">Tentang Kami</a>
-              </li>
-              <li class="mb-3">
-                <a href="includes/kontak.html" class="inline-block mb-5">Hubungi Kami</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <h4 class="fw-semibold mb-4 pt-3">Ikuti Kami</h4>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="https://facebook.com" target="_blank" class="ps-1"
-                  ><svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="25px" style="float: left; padding-right: 4px">
-                    <path
-                      d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
-                    /></svg
-                  ><span> Nama Sekolah</span></a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="https://twitter.com" target="_blank" class="inline-block mb-5"
-                  ><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="25px" style="float: left; padding-right: 4px">
-                    <path
-                      d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
-                    /></svg
-                  ><span>Nama Sekolah</span></a
-                >
-              </li>
-              <li class="mb-3">
-                <a href="https://instagram.com" target="_blank" class="inline-block mb-5"
-                  ><svg role="img" width="23" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current" style="float: left; padding-right: 5px">
-                    <title>Instagram</title>
-                    <path
-                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 
-                                4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                    /></svg
-                  ><span>Nama Sekolah</span></a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="col me-3">
+          <h4 class="fw-semibold mb-4 pt-3">Informasi</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="includes/artikel.html" class="inline-block mb-5">Artikel</a>
+            </li>
+            <li class="mb-3">
+              <a href="includes/galeri.html" class="inline-block mb-5">Galeri</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col me-3">
+          <h4 class="fw-semibold mb-4 pt-3">Tentang</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="includes/tentang.html" class="inline-block mb-5">Tentang Kami</a>
+            </li>
+            <li class="mb-3">
+              <a href="includes/kontak.html" class="inline-block mb-5">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4 class="fw-semibold mb-4 pt-3">Ikuti Kami</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3 ">
+              <a href="https://facebook.com" target="_blank" class="d-flex align-items-center"><svg class=""
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="30"
+                  style="float: left; padding-right: 4px">
+                  <path
+                    d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z" />
+                </svg><span> Nama Sekolah</span></a>
+            </li>
+            <li class="mb-3">
+              <a href="https://twitter.com" target="_blank" class="d-flex align-items-center"><svg class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30"
+                  style="float: left; padding-right: 4px">
+                  <path
+                    d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" />
+                </svg><span>Nama Sekolah</span></a>
+            </li>
+            <li class="mb-3">
+              <a href="https://instagram.com" target="_blank" class="d-flex align-items-center"><svg role="img"
+                  width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current"
+                  style="float: left; padding-right: 5px">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 
+                                4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                </svg><span>Nama Sekolah</span></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <hr />
-      <div class="py-2">
-        <p class="cr text-center">Copyright © 2021. All rights reserved.</p>
-      </div>
-    </section>
-    <!-- footer end -->
+    </div>
+    <hr />
+    <div class="py-2">
+      <p class="cr text-center">Copyright © 2021. All rights reserved.</p>
+    </div>
+  </section>
+  <!-- footer end -->
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-    <script>
-      AOS.init();
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
-  </body>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

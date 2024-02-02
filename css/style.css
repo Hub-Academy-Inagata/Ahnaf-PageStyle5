@@ -19,10 +19,6 @@ h1 {
   font-size: 40px;
 }
 
-.container {
-  padding: 0px;
-}
-
 .navbar {
   z-index: 3;
 }
@@ -31,18 +27,18 @@ h1 {
   z-index: 2;
 }
 
-.nav-button {
+.navbar .nav-button {
   background-color: transparent;
-  border-color: black;
+  border: 1px solid black;
   color: black;
   border-radius: 100px;
+  transition: all 0.2s ease;
 }
 
 .nav-button:hover {
   background-color: #642abb;
   color: white;
   border-color: var(--purp);
-  transition: all 0.2s ease-in-out;
 }
 
 /* Navbar color */
@@ -58,6 +54,10 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
+a.nav-link{
+  font-weight: 600;
+}
+
 .nav-link.active {
   font-weight: 700;
 }
@@ -68,7 +68,7 @@ a.nav-link:hover {
 }
 
 .slogan {
-  font-size: 56px;
+  font-size: 48px;
 }
 
 .hero p {
@@ -123,11 +123,11 @@ a.nav-link:hover {
 
 .main-button {
   background-color: #f63fcf;
+  transition: all 0.2s ease-in-out;
 }
 
 .main-button:hover {
   background-color: #e725bd;
-  transition: all 0.2s ease-in-out;
 }
 
 #tentang img {
@@ -145,6 +145,20 @@ a.nav-link:hover {
 
 #galeri #more {
   font-size: 24px;
+}
+
+.gallery-card{
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.gallery-card:hover{
+  scale: 1.05;
+}
+
+.gallery-card a{
+  text-decoration: none;
+  color: white;
 }
 
 #footer h4 {
@@ -256,4 +270,557 @@ a.nav-link:hover {
 #keunggulan p {
   font-size: 20px;
   color: var(--txt);
+}
+
+/* @media screen and (max-width: 922px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+} */
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0px 25px;
+  }
+
+  .nav-color {
+    background-color: white;
+    /* @apply z-[9999] bg-white;
+    backdrop-filter: blur(80px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2); */
+    /* transition: all 0.3s ease-out; */
+  }
+
+  nav.navbar .container{
+    transition: all 0.3s ease;
+  }
+
+  .collapse.navbar-collapse.show{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70% 0;
+  }
+
+  .collapse.navbar-collapse{
+    transition: all 0.3s ease;
+  }
+
+  nav .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3.slogan{
+    font-size: 28px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero h5 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .hero .main-button{
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .hero .img-hero {
+    /* display: none; */
+    padding-top: 24px;
+  }
+
+  #tentang h1 {
+    font-size: 32px;
+  }
+
+  #tentang p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #artikel h1 {
+    font-size: 32px;
+  }
+
+  #artikel h3 {
+    font-size: 18px;
+  }
+
+  #artikel .title {
+    font-size: 18px;
+  }
+
+  #artikel p {
+    font-size: 14px;
+  }
+
+  #detail-artikel h1 {
+    font-size: 24px;
+  }
+
+  #detail-artikel .tanggal {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  #detail-artikel p {
+    font-size: 14px;
+  }
+
+  #detail-artikel .isi {
+    font-size: 14px;
+  }
+
+  #keunggulan p {
+    font-size: 14px;
+  }
+
+  #keunggulan h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #keunggulan h4 {
+    font-size: 18px;
+  }
+
+  #artikel .baca {
+    position: relative;
+  }
+
+  #video img {
+    width: 100%;
+  }
+
+  #video h1 {
+    font-size: 28px;
+  }
+
+  #video p {
+    font-size: 18px;
+  }
+
+  #galeri h1 {
+    font-size: 28px;
+  }
+
+  #galeri #more {
+    font-size: 16px;
+    bottom: 0;
+  }
+
+  #galeri #more svg {
+    width: 15px;
+  }
+
+  #galeri p {
+    font-size: 18px;
+  }
+
+  #galeri .gal {
+    flex-direction: column;
+  }
+
+  #galeri .gal svg {
+    width: 30px;
+  }
+
+  #guru .cards {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #guru h1 {
+    font-size: 24px;
+  }
+
+  #guru #more {
+    font-size: 16px;
+  }
+
+  #guru #more svg {
+    width: 15px;
+  }
+
+  #guru .card-text {
+    font-size: 20px;
+  }
+
+  #doc h1 {
+    font-size: 28px;
+  }
+
+  #news h1 {
+    font-size: 28px;
+  }
+
+  #news .judul {
+    font-size: 20px;
+  }
+
+  #news .kanban {
+    font-size: 24px;
+  }
+
+  #news p {
+    font-size: 14px;
+  }
+
+  #news .main-button {
+    font-size: 14px;
+  }
+
+  #artikel .cardicle .title {
+    font-size: 16px;
+  }
+
+  #artikel .cardicle .tgl {
+    font-size: 12px;
+  }
+
+  #doc .title {
+    font-size: 20px;
+  }
+
+  #doc .cards {
+    flex-direction: column;
+  }
+
+  #artikel .art {
+    flex-direction: column;
+  }
+
+  #artikel .cards {
+    flex-direction: column;
+  }
+
+  #artikel .card-article {
+    width: 100%;
+    /* margin: auto; */
+  }
+
+  #footer .cc {
+    font-size: 16px;
+  }
+
+  #footer .row {
+    flex-direction: column;
+  }
+
+  #footer a {
+    font-size: 16px;
+  }
+
+  #footer col {
+    margin-bottom: 20px;
+  }
+
+  #footer .cr {
+    font-size: 14px;
+  }
+
+  #contact img {
+    width: 35px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  #contact p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .mail input {
+    font-size: 14px;
+    padding: 0.75rem;
+    border-color: gray;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .mail textarea {
+    font-size: 14px;
+    padding: 0.75rem;
+    border-color: gray;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0px 10px;
+  }
+
+  .nav-color {
+    /* @apply z-[9999] bg-white;
+    backdrop-filter: blur(80px); */
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out;
+  }
+
+  nav.navbar .container{
+    transition: all 0.3s ease;
+  }
+
+  .collapse.navbar-collapse.show{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 50%;
+  }
+
+  .collapse.navbar-collapse{
+    transition: all 0.3s ease;
+  }
+
+  nav .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3.slogan{
+    font-size: 32px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* .hero-hero {
+    height: 100vh;
+  } */
+
+  .hero h5 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  #tentang h1 {
+    font-size: 32px;
+  }
+
+  #tentang p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #artikel h1 {
+    font-size: 32px;
+  }
+
+  #artikel h3 {
+    font-size: 18px;
+  }
+
+  #artikel .title {
+    font-size: 18px;
+  }
+
+  #artikel p {
+    font-size: 14px;
+  }
+
+  #detail-artikel h1 {
+    font-size: 24px;
+  }
+
+  #detail-artikel .tanggal {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  #detail-artikel p {
+    font-size: 14px;
+  }
+
+  #detail-artikel .isi {
+    font-size: 14px;
+  }
+
+  #keunggulan p {
+    font-size: 14px;
+  }
+
+  #keunggulan h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #keunggulan h4 {
+    font-size: 18px;
+  }
+
+  #unggul h5 {
+    font-size: 16px;
+  }
+
+  #artikel .baca {
+    position: relative;
+  }
+
+  #video img {
+    width: 100%;
+  }
+
+  #video h1 {
+    font-size: 28px;
+  }
+
+  #video p {
+    font-size: 18px;
+  }
+
+  #galeri h1 {
+    font-size: 28px;
+  }
+
+  #galeri #more {
+    font-size: 16px;
+    bottom: 0;
+  }
+
+  #galeri #more svg {
+    width: 15px;
+  }
+
+  #galeri p {
+    font-size: 18px;
+  }
+
+  #galeri .gal svg {
+    width: 30px;
+  }
+
+  #guru .cards {
+    margin: auto;
+  }
+
+  #guru h1 {
+    font-size: 28px;
+  }
+
+  #guru #more {
+    font-size: 20px;
+  }
+
+  #guru #more svg {
+    width: 20px;
+  }
+
+  #guru .card-text {
+    font-size: 20px;
+  }
+
+  #doc h1 {
+    font-size: 28px;
+  }
+
+  #news h1 {
+    font-size: 28px;
+  }
+
+  #news .judul {
+    font-size: 20px;
+  }
+
+  #news .kanban {
+    font-size: 24px;
+  }
+
+  #news p {
+    font-size: 14px;
+  }
+
+  #news .main-button {
+    font-size: 14px;
+  }
+
+  #artikel .cardicle .title {
+    font-size: 16px;
+  }
+
+  #artikel .cardicle .tgl {
+    font-size: 12px;
+  }
+
+  #doc .title {
+    font-size: 20px;
+  }
+
+  #artikel .card-article {
+    width: 320px;
+  }
+
+  #footer .cc {
+    font-size: 16px;
+  }
+
+  #footer .row {
+    flex-direction: column;
+  }
+
+  #footer a {
+    font-size: 16px;
+  }
+
+  #footer col {
+    margin-bottom: 20px;
+  }
+
+  #footer .cr {
+    font-size: 14px;
+  }
+
+  #contact img {
+    width: 35px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  #contact p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .mail input {
+    font-size: 14px;
+    padding: 0.75rem;
+    border-color: gray;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .mail textarea {
+    font-size: 14px;
+    padding: 0.75rem;
+    border-color: gray;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
 }
